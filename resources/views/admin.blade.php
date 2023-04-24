@@ -38,7 +38,7 @@
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-          <p class="text-[#66EB9A] px-3 py-2 text-sm font-medium">We Fashion</p>
+          <p class="text-[#66EB9A] px-3 py-2 text-sm font-medium">WE FASHION</p>
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Produits</a>
             <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Catégories</a>
@@ -73,7 +73,7 @@
 
   <!-- Mobile menu, show/hide based on menu state. -->
   <div class="sm:hidden" id="mobile-menu">
-  <p href="{{ route('home') }}" class="text-[#66EB9A] px-3 py-2 text-sm font-medium">We Fashion</p>
+  <p href="{{ route('home') }}" class="text-[#66EB9A] px-3 py-2 text-sm font-medium">WE FASHION</p>
     <div class="space-y-1 px-2 pb-3 pt-2">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
       <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
@@ -89,7 +89,7 @@
 <main>
 
 <div class="m-9 flex justify-end">
-<button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Nouveau</button>
+<button type="button" class="text-black bg-[#66EB9A] focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Nouveau</button>
 </div>
 
 

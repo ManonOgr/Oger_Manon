@@ -45,7 +45,7 @@
       <div class="flex flex-1 items-center justify-center text-white sm:items-stretch sm:justify-start">
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-          <a href="{{ route('home') }}" class="text-[#66EB9A] px-3 py-2 text-sm font-medium">We Fashion</a>
+          <a href="{{ route('home') }}" class="text-[#66EB9A] px-3 py-2 text-sm font-medium">WE FASHION</a>
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="{{ route('women') }}" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Femme</a>
             <a href="{{ route('men') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Homme</a>
@@ -66,7 +66,7 @@
       <a href="{{ route('soldes') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Soldes</a>
     </div>
   </div>
-  
+
 </nav>
 
   </header>
