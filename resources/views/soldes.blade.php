@@ -29,6 +29,8 @@
               <!-- Logo (lg+) -->
               <div class="hidden lg:flex lg:items-center">
               <a href="{{ route('home') }}" class="text-[#66EB9A]">We Fashion</a>
+
+
               </div>
 
               <div class="hidden h-full lg:flex">
@@ -38,8 +40,7 @@
                     <div class="flex">
                       <div class="relative flex">
 
-                        <button type="button" class="border-transparent text-white hover:text-white  relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out" aria-expanded="false">
-                        <a href="{{ route('women') }}">Femme</a></button>
+                        <a class="border-transparent text-white hover:text-white  relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out" aria-expanded="false" href="{{ route('women') }}">Femme</a>
 
                       </div>
 
@@ -53,8 +54,7 @@
                     <div class="flex">
                       <div class="relative flex">
 
-                        <button type="button" class="border-transparent text-white hover:text-white  relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out" aria-expanded="false">
-                        <a href="{{ route('men') }}">Homme</a></button>
+                        <a class="border-transparent text-white hover:text-white  relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out" aria-expanded="false" href="{{ route('men') }}">Homme</a>
 
                       </div>
 
@@ -76,7 +76,6 @@
             </div>
           </div>
         </div>
-      </div>
     </nav>
   </header>
 
@@ -99,15 +98,17 @@
               <li class="inline-flex w-64 flex-col text-center lg:w-auto">
                 <div class="group relative">
                   <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+
+                  <a href="{{ route('products') }}"> <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75"></a>
+
                   </div>
                   <div class="mt-6">
                     <p class="text-sm text-gray-500">Black</p>
                     <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
+                    <p class="mt-1 text-gray-900">
                         Machined Pen
-                      </a>
+                    </p>
+
                     </h3>
                     <p class="mt-1 text-gray-900">$35</p>
                   </div>
@@ -118,74 +119,17 @@
               <li class="inline-flex w-64 flex-col text-center lg:w-auto">
                 <div class="group relative">
                   <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+
+                  <a href="{{ route('products') }}"> <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75"></a>
+
                   </div>
                   <div class="mt-6">
                     <p class="text-sm text-gray-500">Black</p>
                     <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
+                    <p class="mt-1 text-gray-900">
                         Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
+                    </p>
 
-
-              <!-- More products... -->
-
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
-
-              <!-- More products... -->
-
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
-                    </h3>
-                    <p class="mt-1 text-gray-900">$35</p>
-                  </div>
-                </div>
-              </li>
-              <!-- More products... -->
-              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
-                <div class="group relative">
-                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                  </div>
-                  <div class="mt-6">
-                    <p class="text-sm text-gray-500">Black</p>
-                    <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
-                        Machined Pen
-                      </a>
                     </h3>
                     <p class="mt-1 text-gray-900">$35</p>
                   </div>
@@ -198,15 +142,83 @@
               <li class="inline-flex w-64 flex-col text-center lg:w-auto">
                 <div class="group relative">
                   <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+
+                  <a href="{{ route('products') }}"> <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75"></a>
+
                   </div>
                   <div class="mt-6">
                     <p class="text-sm text-gray-500">Black</p>
                     <h3 class="mt-1 font-semibold text-gray-900">
-                      <a href="#">
-                        <span class="absolute inset-0"></span>
+                    <p class="mt-1 text-gray-900">
                         Machined Pen
-                      </a>
+                    </p>
+
+                    </h3>
+                    <p class="mt-1 text-gray-900">$35</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- More products... -->
+
+              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                <div class="group relative">
+                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+
+                  <a href="{{ route('products') }}"> <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75"></a>
+
+                  </div>
+                  <div class="mt-6">
+                    <p class="text-sm text-gray-500">Black</p>
+                    <h3 class="mt-1 font-semibold text-gray-900">
+                    <p class="mt-1 text-gray-900">
+                        Machined Pen
+                    </p>
+
+                    </h3>
+                    <p class="mt-1 text-gray-900">$35</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- More products... -->
+              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                <div class="group relative">
+                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+
+                  <a href="{{ route('products') }}"> <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75"></a>
+
+                  </div>
+                  <div class="mt-6">
+                    <p class="text-sm text-gray-500">Black</p>
+                    <h3 class="mt-1 font-semibold text-gray-900">
+                    <p class="mt-1 text-gray-900">
+                        Machined Pen
+                    </p>
+
+                    </h3>
+                    <p class="mt-1 text-gray-900">$35</p>
+                  </div>
+                </div>
+              </li>
+
+
+              <!-- More products... -->
+
+              <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                <div class="group relative">
+                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+
+                  <a href="{{ route('products') }}"> <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75"></a>
+
+                  </div>
+                  <div class="mt-6">
+                    <p class="text-sm text-gray-500">Black</p>
+                    <h3 class="mt-1 font-semibold text-gray-900">
+                    <p class="mt-1 text-gray-900">
+                        Machined Pen
+                    </p>
+
                     </h3>
                     <p class="mt-1 text-gray-900">$35</p>
                   </div>
@@ -241,7 +253,7 @@
           </svg>
         </a>
         <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
-        <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
+        <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-neutral-500 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-grey-800">1</a>
         <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
         <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">3</a>
         <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">4</a>
@@ -255,8 +267,6 @@
         </a>
       </nav>
     </div>
-  </div>
-</div>
 
 </main>
 
@@ -314,8 +324,9 @@
               </div>
           </div>
       </div>
+      </div>
 </footer>
-</div>
+
 
     </body>
 </html>

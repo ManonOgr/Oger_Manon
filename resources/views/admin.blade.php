@@ -74,13 +74,6 @@
 
                       </div>
 
-
-
-
-
-
-
-
   </div>
 </nav>
 
@@ -102,7 +95,7 @@
                     Catégories
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Price
+                    Prix
                 </th>
                 <th scope="col" class="px-6 py-3">
                     Etat
