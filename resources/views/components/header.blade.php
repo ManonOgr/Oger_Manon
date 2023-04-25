@@ -4,63 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <title>Document</title>
 </head>
 <body>
-<header class="relative z-10">
 
-<nav class="bg-black">
-<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-  <div class="relative flex h-16 items-center justify-between">
-    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-      <!-- Mobile menu button-->
-      <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+
+
+<nav class="bg-black border-gray-200">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="{{ route('home') }}" class="flex items-center">
+<p class="text-[#66EB9A]">WE FASHION</p>
+  </a>
+  <div class="flex items-center md:order-2">
+      <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
-        <!--
-          Icon when menu is closed.
-
-          Menu open: "hidden", Menu closed: "block"
-        -->
-        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        <!--
-          Icon when menu is open.
-
-          Menu open: "block", Menu closed: "hidden"
-        -->
-        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-    <div class="flex flex-1 items-center justify-center text-white sm:items-stretch sm:justify-start">
-      <div class="hidden sm:ml-6 sm:block">
-        <div class="flex space-x-4">
-        <a href="{{ route('home') }}" class="text-[#66EB9A] px-3 py-2 text-sm font-medium font-sans">WE FASHION</a>
-          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a href="{{ route('women') }}" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Femme</a>
-          <a href="{{ route('men') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Homme</a>
-          <a href="{{ route('soldes') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Soldes</a>
-        </div>
-      </div>
-    </div>
-
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
   </div>
-</div>
-
-<!-- Mobile menu, show/hide based on menu state. -->
-<div class="sm:hidden" id="mobile-menu">
-  <div class="space-y-1 px-2 pb-3 pt-2">
-    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-    <a href="{{ route('women') }}" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Femme</a>
-    <a href="{{ route('men') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Homme</a>
-    <a href="{{ route('soldes') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Soldes</a>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
+    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+      <li>
+        <a href="{{ route('women') }}" class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-white md:p-0 md:hover:text-[#66EB9A] md:dark:text-white" aria-current="page">Femme</a>
+      </li>
+      <li>
+        <a href="{{ route('men') }}" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#66EB9A] md:p-0 dark:text-white md:dark:hover:text-[#66EB9A] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Homme</a>
+      </li>
+      <li>
+        <a href="{{ route('soldes') }}" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#66EB9A] md:p-0 dark:text-white md:dark:hover:text-[#66EB9A] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Soldes</a>
+      </li>
+    </ul>
   </div>
-</div>
-
+  </div>
 </nav>
 
-</header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
 </body>
 </html>

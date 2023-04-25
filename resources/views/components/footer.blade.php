@@ -14,7 +14,7 @@
         <div class="md:flex md:justify-center">
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Informations</h2>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Informations</h2>
                   <ul class="text-gray-600 dark:text-gray-400 font-medium">
                       <li class="mb-4">
                           <a href="#" class="hover:underline">Mentions légales</a>
@@ -28,7 +28,7 @@
                   </ul>
               </div>
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Service Client</h2>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Service Client</h2>
                   <ul class="text-gray-600 dark:text-gray-400 font-medium">
                       <li class="mb-4">
                           <a href="#" class="hover:underline ">Contactez-nous</a>
@@ -42,7 +42,7 @@
                   </ul>
               </div>
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Réseaux sociaux</h2>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Réseaux sociaux</h2>
                   <ul class="text-gray-600 dark:text-gray-400 font-medium">
                       <li class="mb-4">
                       <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
