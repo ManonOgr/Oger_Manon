@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Size extends Model
 {
     use HasFactory;
+
+    public function Product(): BelongsToMany
+    {
+        return $this->belongsToMany(Product::class);
+    }
+
+    public $timestamps = false;
 }
