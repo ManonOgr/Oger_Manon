@@ -3,27 +3,24 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-//ajout des models
-use app\Models\Category;
-use app\Models\Product_size;
-use app\Models\Product;
-use app\Models\Size;
 
+use Database\Factories\CategoryFactory;
+use Database\Factories\ProductFactory;
+use Database\Factories\SizeFactory;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
      */
-public function run(): void
+    public function run(): void
 {
     $this->call([
         CategorySeeder::class,
         ProductSeeder::class,
-        Product_sizeSeeder::class,
         SizeSeeder::class,
-
+        ProductSizeSeeder::class,
     ]);
 }
 }

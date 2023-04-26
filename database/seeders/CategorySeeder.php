@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,8 +16,8 @@ class CategorySeeder extends Seeder
         Category::factory()
         ->count(2)
         ->sequence(
-            ['name' => 'man'],
-            ['name' => 'women']
+            ['category_name' => 'man'],
+            ['category_name' => 'women']
 
         )
         ->create();

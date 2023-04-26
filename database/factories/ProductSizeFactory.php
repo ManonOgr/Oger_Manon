@@ -1,15 +1,16 @@
 <?php
 
 namespace Database\Factories;
-
+use App\Models\Product;
+use App\Models\Size;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Product_size>
  */
-class Product_sizeFactory extends Factory
+class ProductSizeFactory extends Factory
 {
-    protected $Product_size = Size::class;
+    protected $ProductSize = Size::class;
     /**
      * Define the model's default state.
      *
@@ -18,7 +19,9 @@ class Product_sizeFactory extends Factory
     public function definition(): array
     {
         return [
-           'quantity' => fake()->randomDigit()
+            'quantity' => fake()->randomDigit(),
+            'product_id' => Product::all()->random(),
+            'size_id' => Size::all()->random(),
         ];
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,12 +21,13 @@ class ProductFactory extends Factory
         return [
             'product_name' =>fake()->name(),
            'product_description' =>fake()->text(100),
-            'product_price'=>fake()->float(),
+            'product_price'=>fake()->randomNumber(),
             'product_picture'=>fake()->image(null, 360, 360, 'animals', true),
-            'product_visibility'=>fake()->randomElements(['publié', 'non publié']),
-            'product_state'=>fake()->randomElements(['en solde', 'standard']),
-            'product_reference'=>fake()->randomNumber(5, false),
-            'product_category'=>fake()->randomElements(['femme', 'homme'])
+            'product_visibility'=>fake()->randomElement(['publié', 'non publié']),
+            'product_state'=>fake()->randomElement(['en solde', 'standard']),
+            'product_reference'=>fake()->unique()->word(),
+            'product_category'=>fake()->randomElement(['femme', 'homme']),
+            'category_id'=>Category::all()->random()->id,
 
         ];
     }

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('product_name');
             $table->text('product_description');
-            $table->decimal('product_price');
+            $table->string('product_price');
             $table->string('product_picture');
             $table->enum('product_visibility',['publié', 'non publié']);
             $table->enum('product_state',['en solde', 'standard']);
