@@ -21,9 +21,9 @@ Route::get('/women', function () {
     return view('women');
 })->name('women');
 
-Route::get('/boy', function () {
-    return view('boy');
-})->name('boy');
+Route::get('/men', function () {
+    return view('men');
+})->name('men');
 
 Route::get('/soldes', function () {
     return view('soldes');
