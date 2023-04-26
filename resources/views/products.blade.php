@@ -88,12 +88,12 @@
                                 <div>
                                     <label
                                         for="countries"
-                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                                        class="block mb-2 text-sm font-medium text-white dark:text-white"
                                         >Selectionner une taille</label
                                     >
                                     <select
                                         id="countries"
-                                        class="bg-[#66EB9A] border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        class=" border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     >
                                         <option selected>
                                             Selectionner une taille
@@ -107,12 +107,11 @@
                                 </div>
 
                                 <div class="sm:flex-col1 mt-10 flex">
-                                    <button
-                                        type="submit"
-                                        class="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-[#66EB9A] px-8 py-3 text-base font-medium text-black hover:bg-[#66EB9A] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
-                                    >
-                                        Acheter
-                                    </button>
+                                <button
+                                    class="bg-[#66EB9A] hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+                                >
+                                     Acheter
+                                </button>
                                 </div>
                             </form>
                         </div>
