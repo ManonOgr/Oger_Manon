@@ -31,7 +31,7 @@ public function doAdmin(AdminRequest $request){
 public function logout(){
 
 Auth::logout();
-return to_route('auth.admin');
+return to_route('home');
 }
 
 }
