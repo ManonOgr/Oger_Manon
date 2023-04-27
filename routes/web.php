@@ -36,7 +36,6 @@ Route::get('/products', function () {
 Route::get('/admin', [\App\Http\Controllers\AuthController::class, 'admin'])->name('auth.admin');
 Route::delete('/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('auth.logout');
 Route::post('/admin', [\App\Http\Controllers\AuthController::class, 'doAdmin']);
-Route::get('/home', [\App\Http\Controllers\AuthController::class, 'admin'])->name('auth.home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
