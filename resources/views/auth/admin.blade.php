@@ -1,4 +1,4 @@
-@extends("home")
+{{-- @extends("home") --}}
 <!DOCTYPE html>
 <html lang="en">
     <head>

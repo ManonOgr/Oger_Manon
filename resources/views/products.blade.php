@@ -109,6 +109,7 @@
                 </div>
                 @endforeach
             </div>
+            {{$products->links()}}
         </main>
 
         @include('./components/footer')

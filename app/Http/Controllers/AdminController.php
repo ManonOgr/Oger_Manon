@@ -15,5 +15,7 @@ User::create([
 ]
 
 );
+
+return view('auth.admin');
     }
 }

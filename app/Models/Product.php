@@ -8,6 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+    protected $fillable=[
+        'product_name',
+'product_category',
+'product_price',
+'product_picture',
+'product_reference',
+'product_state',
+'product_description',
+    ];
 
     public function Size(): BelongsToMany
     {

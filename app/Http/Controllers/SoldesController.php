@@ -10,9 +10,9 @@ class SoldesController extends Controller
 {
 
 
-    public function index(String $id)
+    public function index()
     {
-       $products = Product::where('product_state', $id)->simplePaginate(6);
+       $products = Product::where('product_state', 'solde')->simplePaginate(6);
        $quantity = Product::count();
 
         return view('soldes', ['products' => $products,'quantity' => $quantity]);

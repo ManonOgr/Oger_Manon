@@ -21,7 +21,7 @@ return new class extends Migration
             $table->enum('product_state',['solde', 'standard']);
             $table->string('product_reference');
             $table->enum('product_category',['femme', 'homme']);
-            $table->unsignedBigInteger('category_id')->index();
+            $table->unsignedBigInteger('category_id')->nullable();
             $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
