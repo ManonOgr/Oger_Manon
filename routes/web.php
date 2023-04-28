@@ -21,7 +21,6 @@ Route::get('/soldes', [SoldesController::class, 'index'])->name('soldes');
 
 Route::get('/product/{id}', [ProductController::class, 'index'])->name('product');
 
-
 Route::get('/admin', [AuthController::class, 'admin'])->name('auth.admin');
 Route::delete('/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('auth.logout');
 Route::post('/admin', [\App\Http\Controllers\AuthController::class, 'doAdmin']);
@@ -36,8 +35,8 @@ Route::get('/editcategories/{id}', [EditController::class, 'index'])->name('edit
 
 Route::get('/createproduct', [CreateProductController::class, 'index'])->name('createproduct')->middleware('auth');
 
-Route::get('/createcategories', [CreateProductController::class, 'index'])->name('createcategories')->middleware('auth');
+Route::get('/createcategories', [CreateCategoriesController::class, 'index'])->name('createcategories')->middleware('auth');
 
-Route::post('/createcategories', [CreateCategoriesController::class, 'store'])->name('createnewcategories')->middleware('auth');
+Route::post('/createnewcategories', [CreateCategoriesController::class, 'store'])->name('createnewcategories')->middleware('auth');
 
 Route::post('/createnewproduct', [CreateProductController::class, 'store'])->name('createnewproduct')->middleware('auth');
