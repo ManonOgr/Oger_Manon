@@ -18,6 +18,7 @@
                     <div
                         class="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8"
                     >
+                    @foreach($products as $product)
                         <!-- Image gallery -->
                         <div class="flex flex-col-reverse">
                             <!-- Image selector -->
@@ -38,11 +39,7 @@
                                     role="tabpanel"
                                     tabindex="0"
                                 >
-                                    <img
-                                        src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg"
-                                        alt="Angled front view with bag zipped and handles upright."
-                                        class="h-full w-full object-cover object-center sm:rounded-lg"
-                                    />
+                                <img src="{{ asset($product->product_picture) }}" alt="{{ $product->product_name }} image" class="h-full w-full object-cover object-center group-hover:opacity-75">
                                 </div>
 
                                 <!-- More images... -->
@@ -54,7 +51,7 @@
                             <h1
                                 class="text-3xl font-bold tracking-tight text-gray-900"
                             >
-                                Zip Tote Basket
+                            {{$product->product_name}}
                             </h1>
 
                             <div class="mt-3">
@@ -62,7 +59,7 @@
                                 <p
                                     class="text-3xl tracking-tight text-gray-900"
                                 >
-                                    $140
+                                {{$product->product_price}} €
                                 </p>
                             </div>
 
@@ -71,14 +68,7 @@
 
                                 <div class="space-y-6 text-base text-gray-700">
                                     <p>
-                                        The Zip Tote Basket is the perfect
-                                        midpoint between shopping tote and comfy
-                                        backpack. With convertible straps, you
-                                        can hand carry, should sling, or
-                                        backpack this convenient and spacious
-                                        bag. The zip top and durable canvas
-                                        construction keeps your goods protected
-                                        for all-day use.
+                                        {{$product->product_description}}
                                     </p>
                                 </div>
                             </div>
@@ -117,6 +107,7 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
         </main>
 

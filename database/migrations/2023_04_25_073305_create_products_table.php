@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('product_price');
             $table->string('product_picture');
             $table->enum('product_visibility',['publié', 'non publié']);
-            $table->enum('product_state',['en solde', 'standard']);
+            $table->enum('product_state',['solde', 'standard']);
             $table->string('product_reference');
             $table->enum('product_category',['femme', 'homme']);
             $table->unsignedBigInteger('category_id')->index();
