@@ -9,7 +9,7 @@
         <title>Admin</title>
     </head>
     <body>
-        <section class="bg-gray-300">
+        <section class="bg-gray-300 h-screen flex item-center justify-center">
             <div
                 class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
             >
