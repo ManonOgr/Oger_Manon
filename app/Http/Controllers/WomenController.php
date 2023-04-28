@@ -13,7 +13,7 @@ class WomenController extends Controller
 
     public function index($product_category) : View
     {
-       $products = Product::where('product_category', $product_category)->orderBy('created_at', 'desc')->simplePaginate(6);
+       $products = Product::where('product_category', $product_category)->orderBy('created_at', 'desc')->paginate(6);
        $quantity = Product::count();
 
         return view('women', ['products' => $products,'quantity' => $quantity]);

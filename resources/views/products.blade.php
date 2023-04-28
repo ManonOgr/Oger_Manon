@@ -19,9 +19,9 @@
                         class="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8"
                     >
                     @foreach($products as $product)
-                        <!-- Image gallery -->
+
                         <div class="flex flex-col-reverse">
-                            <!-- Image selector -->
+                         
                             <div
                                 class="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none"
                             >
@@ -41,8 +41,6 @@
                                 >
                                 <img src="{{ asset($product->product_picture) }}" alt="{{ $product->product_name }} image" class="h-full w-full object-cover object-center group-hover:opacity-75">
                                 </div>
-
-                                <!-- More images... -->
                             </div>
                         </div>
 

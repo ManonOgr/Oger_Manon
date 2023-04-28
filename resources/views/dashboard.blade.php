@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <title>Admin</title>
+        <title>Products</title>
     </head>
     <body>
         @include('./components/headerdashboard')
@@ -59,7 +59,7 @@
                                 >
                             </td>
                             <td class="px-6 py-4">
-                                <a
+                                 <a
                                     href="#"
                                     class="font-medium text-red-600 dark:text-red-500 hover:underline"
                                     >Remove</a

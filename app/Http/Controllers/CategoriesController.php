@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Contracts\View\View;
-
 class CategoriesController extends Controller
+
 {
     public function index() : View
     {

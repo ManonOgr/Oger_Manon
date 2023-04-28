@@ -19,7 +19,7 @@ public function doAdmin(AdminRequest $request){
 
     if(Auth::attempt($credentials)){
         $request->session()->regenerate();
-        return redirect()->intended(route('dashboard'));
+        return redirect()->intended(route('products'));
     };
 
     return to_route('auth.admin')->withErrors([

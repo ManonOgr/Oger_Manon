@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     public function index() : View
     {
-        $products = Product::orderBy('created_at', 'desc')->simplePaginate(6);
+        $products = Product::orderBy('created_at', 'desc')->paginate(6);
         $quantity = Product::count();
 
         return view('home', ['products' => $products,'quantity' => $quantity]);

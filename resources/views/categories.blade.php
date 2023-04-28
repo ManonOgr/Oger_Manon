@@ -61,12 +61,6 @@
 
                 </table>
             </div>
-
-            <div
-                class="flex items-center justify-center border-t border-gray-200 bg-white px-4 py-3 sm:px-6"
-            >
-          
-            </div>
         </main>
     </body>
 </html>
