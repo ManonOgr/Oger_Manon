@@ -16,9 +16,9 @@ class CreateCategoriesController extends Controller
     }
 
     public function store(Request $request){
-
+//dd($request->input('categories'));
        $categories = Category::create([
-'category_name'=>$request->input('categories'),
+        'category_name'=>$request->input('categories'),
         ]);
 return redirect('/categories');
     }
