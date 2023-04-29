@@ -12,6 +12,8 @@ use App\Http\Controllers\EditController;
 use App\Http\Controllers\EditCategoriesController;
 use App\Http\Controllers\CreateProductController;
 use App\Http\Controllers\CreateCategoriesController;
+use App\Http\Controllers\DeleteProductController;
+use App\Http\Controllers\DeleteCategoriesController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -40,3 +42,7 @@ Route::get('/createcategories', [CreateCategoriesController::class, 'index'])->n
 Route::post('/createnewcategories', [CreateCategoriesController::class, 'store'])->name('createnewcategories')->middleware('auth');
 
 Route::post('/createnewproduct', [CreateProductController::class, 'store'])->name('createnewproduct')->middleware('auth');
+
+Route::get('/delete/{id}', [DeleteProductController::class, 'deleteproduct'])->name('deleteproduct')->middleware('auth');
+
+Route::get('/deletecategories/{id}', [DeleteCategoriesController::class, 'deletecategories'])->name('deletecategories')->middleware('auth');

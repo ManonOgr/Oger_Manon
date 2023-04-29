@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Contracts\View\View;
-use Illuminate\Foundation\Providers;
 
 class CreateProductController extends Controller
 {
@@ -17,20 +16,15 @@ class CreateProductController extends Controller
     }
 
     public function store(Request $request){
-$product = $request->validate();
-dd($product);
-
-       $product = Product::create([
-           'product_name'=>$request->input('name'),
-            'product_category'=>$request->input('categories'),
-            'product_price'=>$request->input('price'),
-            'product_picture'=>$request->input('image'),
-            'product_reference'=>$request->input('name').$request->input('price'),
-            'product_state'=>$request->input('state'),
-            'product_description'=>$request->input('description'),
+       $product = Product::create([            'product_name'=>$request->input('name'),
+        'product_category'=>$request->input('categories'),
+        'product_price'=>$request->input('price'),
+        'product_picture'=>$request->input('image'),
+        'product_reference'=>$request->input('name').$request->input('price'),
+        'product_state'=>$request->input('state'),
+        'product_description'=>$request->input('description'),
 
         ]);
-        dd($product);
 return redirect('/products');
     }
 }

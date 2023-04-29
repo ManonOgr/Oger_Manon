@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('products', function (Blueprint $table) {
-            $table->id();
+            $table->id()->onDelete('cascade');
             $table->string('product_name');
             $table->text('product_description');
             $table->string('product_price');
@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('product_reference');
             $table->enum('product_category',['femme', 'homme']);
             $table->unsignedBigInteger('category_id')->nullable();
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }

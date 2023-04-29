@@ -53,14 +53,14 @@
                             <td class="px-6 py-4">{{$product->product_state}}</td>
                             <td class="px-6 py-4">
                                 <a
-                                    href="{{route('productedit', $product->id)}}"
+                                    href="#"
                                     class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                                     >Edit</a
                                 >
                             </td>
                             <td class="px-6 py-4">
                                  <a
-                                    href="#"
+                                    href="{{route('deleteproduct', $product->id)}}"
                                     class="font-medium text-red-600 dark:text-red-500 hover:underline"
                                     >Remove</a
                                 >
