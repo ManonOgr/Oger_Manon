@@ -8,8 +8,6 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CategoriesController;
-use App\Http\Controllers\EditController;
-use App\Http\Controllers\EditCategoriesController;
 use App\Http\Controllers\CreateProductController;
 use App\Http\Controllers\CreateCategoriesController;
 use App\Http\Controllers\DeleteProductController;
@@ -30,10 +28,6 @@ Route::post('/admin', [\App\Http\Controllers\AuthController::class, 'doAdmin']);
 Route::get('/products', [DashboardController::class, 'index'])->name('products')->middleware('auth');
 
 Route::get('/categories', [CategoriesController::class, 'index'])->name('categories')->middleware('auth');
-
-Route::get('/edit/{id}', [EditController::class, 'index'])->name('productedit')->middleware('auth');
-
-Route::get('/editcategories/{id}', [EditController::class, 'index'])->name('editcategories')->middleware('auth');
 
 Route::get('/createproduct', [CreateProductController::class, 'index'])->name('createproduct')->middleware('auth');
 
