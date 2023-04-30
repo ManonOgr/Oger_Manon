@@ -40,4 +40,4 @@ Une fois connecté l'administrateur est redirigé sur le dashboard.
 
 ## Représentation graphique de la base de données
 
-![diagramme de la BDD](public/diagrammetables.pdf)
+-   Dans le dossier public vous trouverez un document pdf contenant le diagramme.
