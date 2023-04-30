@@ -6,13 +6,12 @@ Vous avez été recruté comme développeur par Edouard, directeur de We Fashion
 
 ## Prérequis
 
--   Avoir un mamp/xampp/wampp/lamp d'installé avec PHP version 8 minimum
--   Composer d'installer
+-   Avoir mamp ou wampp ou xampp ou lamp d'installé avec PHP version 8 minimum
 
 ## Installation
 
 1. Cloner le projet dans un dossier htdoc de votre server.
-2. Rentrer dans le dossier en faisant : `cd we_fashion` et ouvrer le projet dans l'éditeur.
+2. Rentrer dans le dossier en faisant : `cd Oger_Manon` et ouvrer le projet dans l'éditeur.
 3. À la racine du projet créer un fichier `.env` identique au `.env.example`
     - **Vérifier :**
     - `APP_URL=htt://localhost:8000`
@@ -20,9 +19,7 @@ Vous avez été recruté comme développeur par Edouard, directeur de We Fashion
     - D'avoir bien configurer `DB_DATABASE` `DB_USERNAME` `DB_PASSWORD` suivant votre configuration.
 4. Tapez les commandes suivantes:
     - `npm i`
-    - `composer up`
     - `php artisan migrate --seed` accepter le warning pour installer la base de données 'we_fashion'. La BDD devrait se remplir de produits.
-    - `php artisan storage:link` pour créer un lien accessible au navigateur des images enregistrer dans l'application.
     - `php artisan serve` et dans un autre onglet `npm run dev`.
     - Le site devrait être accessible à l'adresse <a href="http://localhost:8000">http://localhost:8000</a>.
 
