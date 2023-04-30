@@ -6,13 +6,21 @@ Vous avez été recruté comme développeur par Edouard, directeur de We Fashion
 
 ## Prérequis
 
+<<<<<<< HEAD
 -   Avoir un mamp/xampp/wampp/lamp d'installé avec PHP version 8 minimum
 -   Composer d'installer
+=======
+-   Avoir mamp ou wampp ou xampp ou lamp d'installé avec PHP version 8 minimum
+>>>>>>> 99f18828e9b68f7596adbcd46dae5fa641ebe1c5
 
 ## Installation
 
 1. Cloner le projet dans un dossier htdoc de votre server.
+<<<<<<< HEAD
 2. Rentrer dans le dossier en faisant : `cd we_fashion` et ouvrer le projet dans l'éditeur.
+=======
+2. Rentrer dans le dossier en faisant : `cd Oger_Manon` et ouvrer le projet dans l'éditeur.
+>>>>>>> 99f18828e9b68f7596adbcd46dae5fa641ebe1c5
 3. À la racine du projet créer un fichier `.env` identique au `.env.example`
     - **Vérifier :**
     - `APP_URL=htt://localhost:8000`
@@ -20,9 +28,13 @@ Vous avez été recruté comme développeur par Edouard, directeur de We Fashion
     - D'avoir bien configurer `DB_DATABASE` `DB_USERNAME` `DB_PASSWORD` suivant votre configuration.
 4. Tapez les commandes suivantes:
     - `npm i`
+<<<<<<< HEAD
     - `composer up`
     - `php artisan migrate --seed` accepter le warning pour installer la base de données 'we_fashion'. La BDD devrait se remplir de produits.
     - `php artisan storage:link` pour créer un lien accessible au navigateur des images enregistrer dans l'application.
+=======
+    - `php artisan migrate --seed` accepter le warning pour installer la base de données 'we_fashion'. La BDD devrait se remplir de produits.
+>>>>>>> 99f18828e9b68f7596adbcd46dae5fa641ebe1c5
     - `php artisan serve` et dans un autre onglet `npm run dev`.
     - Le site devrait être accessible à l'adresse <a href="http://localhost:8000">http://localhost:8000</a>.
 
@@ -40,4 +52,8 @@ Une fois connecté l'administrateur est redirigé sur le dashboard.
 
 ## Représentation graphique de la base de données
 
+<<<<<<< HEAD
 ![diagramme de la BDD](./public/diagrammetables.pdf)
+=======
+-   Dans le dossier public vous trouverez un document pdf contenant le diagramme.
+>>>>>>> 99f18828e9b68f7596adbcd46dae5fa641ebe1c5
