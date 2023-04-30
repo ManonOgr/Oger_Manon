@@ -31,10 +31,10 @@
         </div>
         <div class="mb-6 mt-5">
             <label for="text" class="block mb-2 text-sm font-medium text-gray-900">Image</label>
-            <input type="text" name="image" id="large-input" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#66EB9A] focus:border-[#66EB9A] block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-[#66EB9A]" required>
+            <input name="image" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none  dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file" required>
           </div>
         <div class="mb-6 mt-5">
-            <label for="text" class="block mb-2 text-sm font-medium text-gray-900">Etat (solde / Standard)</label>
+            <label for="text" class="block mb-2 text-sm font-medium text-gray-900">Etat (solde / standard)</label>
             <input type="text" name="state" id="large-input" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#66EB9A] focus:border-[#66EB9A] block w-full p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-[#66EB9A]" required>
         </div>
         <div class="mb-6 mt-5">
